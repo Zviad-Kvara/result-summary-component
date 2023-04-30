@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Hanken Grotesk';
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 32px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 0px 0px 32px 32px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #CAC9FF;
+    margin-top: 24px;
+}
+
+.score-div {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+.max-score {
+    color: #CAC9FF;
+    opacity: 0.52;
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.performance-txt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #CAC9FF;
+    margin: 8px 57px 40px 58px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #303B59;
+    margin-top: 24px;
+    margin-left: 32px;
+}
+
+.container {
+    display: flex;
+    margin-left: 30px;
+    border-radius: 12px;
+    height: 56px;
+    width: 315px;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 16px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    margin: 19px 0px 0px 20px;
+}
+
+.reaction {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+    margin-top: 24px;
+}
+
+.reaction-txt {
+    font-weight: 500;
+    color: #FF5555;
+    margin: 17px 0px 0px 16px;
+}
+
+.result-txt {
+    font-weight: 700;
+    color: #303B59;
+    margin: 17px 0px 0px 120px;
+}
+
+span {
+    font-weight: 700;
+    color: #303B59;
+    opacity: 0.5;
+    margin-left: 8px;
+}
+
+.memory {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+}
+
+.memory-txt {
+    font-weight: 500;
+    color: #FFB21E;
+    margin: 17px 0px 0px 16px;
+}
+
+.verbal {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+}
+
+.verbal-txt {
+    font-weight: 500;
+    color: #00BB8F;
+    margin: 18px 14px 0px 16px;
+}
+
+.visual {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+}
+
+.visual-txt {
+    margin: 17px 17px 0px 16px;
+    font-weight: 500;
+    color: #1125D6;
+}
+
+button {
+    height: 56px;
+    width: 315px;
+    background: #303B59;
+    border-radius: 128px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 24px 30px 30px 30px;
+    border: none;
+}
+
+
+/* Desktop Version */
+
+@media screen and (min-width:1440px) {
+    body {
+        height: 100vh;
+    }
+    .main {
+        flex-direction: row;
+        height: 512px;
+        width: 736px;
+    }
+    header {
+        height: 100%;
+        width: 512px;
+        border-radius: 32px;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        margin-top: 38px;
+    }
+    .score-div {
+        width: 200px;
+        height: 200px;
+        border-radius: 55%;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 72px;
+        margin-top: 55px;
+    }
+    .max-score {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .performance-txt {
+        font-size: 18px;
+        line-height: 23px;
+        margin: 14px 54px 55px 54px;
+        height: 69px;
+        width: 260px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: 100%;
+        margin-left: 40px;
+        margin-top: 38px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 31px;
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        border-radius: 12px;
+        height: 56px;
+        width: 288px;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0;
+    }
+    .reaction {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+        margin-top: 12px;
+    }
+    .result-txt {
+        margin: 17px 0px 0px 81px;
+    }
+    .memory-txt {
+        margin-left: 19px;
+    }
+    .verbal-txt {
+        margin-left: 21px;
+    }
+    .visual-txt {
+        margin-left: 21px;
+    }
+    button {
+        margin: 41px 0px 0px 0px;
+    }
+    button:hover {
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+        cursor: pointer;
+    }
+}
